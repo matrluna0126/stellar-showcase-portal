@@ -15,7 +15,7 @@ const projects = [
     category: 'Blockchain',
     description: 'A full-featured NFT marketplace allowing users to mint, buy, sell, and trade digital collectibles with royalty support.',
     technologies: ['Solidity', 'Next.js', 'IPFS', 'ERC-721'],
-    image: 'https://images.unsplash.com/photo-1667913171434-afe9b5e90b90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bmZ0fGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60',
+    image: 'bitcoin.PNG',
   },
   {
     title: 'Fantasy RPG Adventure',
@@ -58,13 +58,6 @@ const projects = [
     description: 'A decentralized social media platform with content ownership, monetization, and governance.',
     technologies: ['Solidity', 'React', 'IPFS', 'The Graph'],
     image: 'https://images.unsplash.com/photo-1639322537228-f710d846310a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmxvY2tjaGFpbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=800&q=60',
-  },
-  {
-    title: 'Mobile Casual Game',
-    category: 'Game Development',
-    description: 'A physics-based casual mobile game with engaging mechanics and progression systems.',
-    technologies: ['Unity', 'C#', 'Firebase', 'Admob'],
-    image: 'https://images.unsplash.com/photo-1586374579358-9d19f9b5d61a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTR8fG1vYmlsZSUyMGdhbWV8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=800&q=60',
   },
   {
     title: 'Analytics Dashboard',
