@@ -1,17 +1,42 @@
 
 import { useEffect, useState } from 'react';
 
+interface Meteor {
+  id: number;
+  delay: number;
+  left: number;
+  opacity: number;
+}
+
+interface Star {
+  id: number;
+  x: number;
+  y: number;
+  size: number;
+  delay: number;
+  duration: number;
+  opacity: number;
+}
+
+interface FallingStar {
+  id: number;
+  left: number;
+  size: number;
+  delay: number;
+  duration: number;
+}
+
 const BackgroundEffects = () => {
-  const [meteors, setMeteors] = useState<Array<{ id: number; delay: number; left: number; opacity: number }>>([]);
-  const [stars, setStars] = useState<Array<{ id: number; x: number; y: number; size: number; delay: number; duration: number; opacity: number }>>([]);
-  const [fallingStars, setFallingStars] = useState<Array<{ id: number; left: number; size: number; delay: number; duration: number }>>([]);
+  const [meteors, setMeteors] = useState<Meteor[]>([]);
+  const [stars, setStars] = useState<Star[]>([]);
+  const [fallingStars, setFallingStars] = useState<FallingStar[]>([]);
 
   // Create meteors
   useEffect(() => {
     const meteorCount = 15;
     const newMeteors = Array.from({ length: meteorCount }, (_, i) => ({
       id: i,
-      delay: `${Math.random() * 10}s`,
+      delay: Math.random() * 10,
       left: Math.random() * window.innerWidth,
       opacity: 0.7 + Math.random() * 0.3,
     }));
@@ -24,8 +49,8 @@ const BackgroundEffects = () => {
       x: Math.random() * 100,
       y: Math.random() * 100,
       size: 1 + Math.random() * 2,
-      delay: `${Math.random() * 5}s`,
-      duration: `${3 + Math.random() * 7}s`,
+      delay: Math.random() * 5,
+      duration: 3 + Math.random() * 7,
       opacity: 0.1 + Math.random() * 0.9,
     }));
     setStars(newStars);
@@ -37,8 +62,8 @@ const BackgroundEffects = () => {
         id: Date.now() + i,
         left: Math.random() * 100,
         size: 1 + Math.random() * 3,
-        delay: `${Math.random() * 2}s`,
-        duration: `${4 + Math.random() * 6}s`,
+        delay: Math.random() * 2,
+        duration: 4 + Math.random() * 6,
       }));
     };
 
@@ -68,8 +93,8 @@ const BackgroundEffects = () => {
             left: `${star.x}%`,
             top: `${star.y}%`,
             '--size': `${star.size}px`,
-            '--duration': star.duration,
-            '--delay': star.delay,
+            '--duration': `${star.duration}s`,
+            '--delay': `${star.delay}s`,
             '--opacity': star.opacity,
           } as React.CSSProperties}
         />
@@ -83,7 +108,7 @@ const BackgroundEffects = () => {
           style={{
             top: `${Math.random() * 80}%`,
             left: `${Math.random() * 100}%`,
-            '--delay': meteor.delay,
+            '--delay': `${meteor.delay}s`,
             '--opacity': meteor.opacity,
           } as React.CSSProperties}
         />
@@ -97,8 +122,8 @@ const BackgroundEffects = () => {
           style={{
             '--left': `${star.left}%`,
             '--size': `${star.size}px`,
-            '--delay': star.delay,
-            '--duration': star.duration,
+            '--delay': `${star.delay}s`,
+            '--duration': `${star.duration}s`,
           } as React.CSSProperties}
         />
       ))}
