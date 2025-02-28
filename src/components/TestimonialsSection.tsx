@@ -6,25 +6,25 @@ const testimonials = [
   {
     name: 'Emily Johnson',
     role: 'CTO at BlockFusion',
-    testimonial: 'Working with this blockchain developer was a game-changer for our DeFi platform. Their technical skills and attention to detail resulted in a secure, efficient protocol that exceeded our expectations. They have a deep understanding of blockchain architecture and smart contract development that's truly impressive.',
+    testimonial: "Working with this blockchain developer was a game-changer for our DeFi platform. Their technical skills and attention to detail resulted in a secure, efficient protocol that exceeded our expectations. They have a deep understanding of blockchain architecture and smart contract development that's truly impressive.",
     image: 'https://randomuser.me/api/portraits/women/1.jpg',
   },
   {
     name: 'David Chen',
     role: 'Game Director at Immersive Adventures',
-    testimonial: 'The game development expertise brought to our project was exceptional. From complex gameplay mechanics to optimization for different platforms, they delivered on every front. Their ability to solve technical challenges while maintaining creative vision makes them an invaluable asset to any game development team.',
+    testimonial: "The game development expertise brought to our project was exceptional. From complex gameplay mechanics to optimization for different platforms, they delivered on every front. Their ability to solve technical challenges while maintaining creative vision makes them an invaluable asset to any game development team.",
     image: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {
     name: 'Sarah Williams',
     role: 'Product Manager at TechInnovate',
-    testimonial: 'I've worked with many front-end developers, but few have the combination of technical skill and design sensibility that this developer brings. They transformed our user interface with beautiful, responsive designs that dramatically improved our conversion rates. The attention to animation details and performance optimization was outstanding.',
+    testimonial: "I've worked with many front-end developers, but few have the combination of technical skill and design sensibility that this developer brings. They transformed our user interface with beautiful, responsive designs that dramatically improved our conversion rates. The attention to animation details and performance optimization was outstanding.",
     image: 'https://randomuser.me/api/portraits/women/44.jpg',
   },
   {
     name: 'Michael Rodriguez',
     role: 'Founder at CryptoVentures',
-    testimonial: 'When we needed a blockchain expert to audit and improve our smart contracts, this developer delivered beyond our expectations. Their deep knowledge of security best practices and ability to optimize gas usage saved us from potential vulnerabilities while reducing costs. I highly recommend their services for any serious blockchain project.',
+    testimonial: "When we needed a blockchain expert to audit and improve our smart contracts, this developer delivered beyond our expectations. Their deep knowledge of security best practices and ability to optimize gas usage saved us from potential vulnerabilities while reducing costs. I highly recommend their services for any serious blockchain project.",
     image: 'https://randomuser.me/api/portraits/men/15.jpg',
   },
 ];
@@ -64,7 +64,7 @@ const TestimonialsSection = () => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="max-w-3xl mx-auto text-white/70"
           >
-            Don't just take my word for it - hear what clients and collaborators have to say about working with me.
+            Don&apos;t just take my word for it - hear what clients and collaborators have to say about working with me.
           </motion.p>
         </motion.div>
 
