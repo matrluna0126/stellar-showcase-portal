@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
     <section id="testimonials" ref={sectionRef} className="py-20 relative">
       <div className="container mx-auto px-6">
         <motion.div
-          initial={{ opacity: a0 }}
+          initial={{ opacity: 0 }}
           animate={isInView ? { opacity: 1 } : { opacity: 0 }}
           transition={{ duration: 0.5 }}
           className="text-center mb-16"
