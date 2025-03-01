@@ -127,7 +127,7 @@ const BackgroundEffects = () => {
   return (
     <div className="fixed inset-0 overflow-hidden pointer-events-none z-0">
       {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-br from-portfolio-dark-purple via-[#201b32] to-[#151220] opacity-95"></div>
+      <div className="absolute inset-0 bg-gradient-to-br from-portfolio-dark-purple via-[#1A142C] to-[#151220] opacity-95"></div>
       
       {/* Nebulae (gas clouds) */}
       {nebulae.map(nebula => (
